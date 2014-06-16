@@ -1,0 +1,25 @@
+{
+    "bitwise": true,        //禁止用位运算符
+    "camelcase": true,      //使用驼峰式
+    "curly": true,          //块级（条件及循环）使用花括号 `{` 和 `}`
+    "eqeqeq": true,         //总是使用全等于
+    "forin": true,          //验证for..in
+    "immed": true,          //调用函数总是使用() => `+function(){}();` 开启后这是不允许的
+    "indent": 4,            //使用4空格
+    "latedef": true,        //禁止使用变量在未定义前
+    "newcap": true,         //构造函数总是使用大写驼峰式
+    "noarg": true,          //禁止使用arguments.caller and arguments.callee
+    "noempty": true,        //禁止使用没有内容的块级（条件及循环）
+    "nonew": true,          //禁止实例化构造函数后不赋值 `new MyConstructor();`是不允许的
+    "quotmark": "single",   //使用单引号
+    "undef": true,          //禁止使用未声明的变量
+    "unused": true,         //禁止定义了变量又不使用
+    "strict": true,         //总是使用严格模式
+    "trailing": true,       //禁止行尾无用的空格
+    "eqnull": true,         //允许 `test==null`的比较
+    "browser": true,        //默认提供浏览器的全局变量；所以在代码里写`document.xxx`是允许的
+    "devel": true,          //默认提供浏览器的控制台信息
+    "node": true,           //默认提供node的全局变量
+    "white": false,         //不使用jsLint的编码风格
+    "predef": ["define", "seajs"]
+}
