@@ -34,6 +34,10 @@
         |
         v
         End
+        
+开启combo,要加载入口文件app.js, async中每个文件为一个combo文件，所以才能在callback中调用各自返回的变量，
+由于define方法已经将模块载入浏览器缓存，所以后面加载其他页面的时候，即使需要依赖前面的模块，能直接从scrat.cache中获取，
+不需要再次组合在combo中（直接在页面执行），重点查看get()方法, 其他没有加载过的文件再组成combo发出请求，实现按需加载和跨页面不重复加载。
 */
 (function (global) {
     'use strict';
